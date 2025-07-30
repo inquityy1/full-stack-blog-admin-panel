@@ -27,6 +27,7 @@ A **full-stack blog admin panel** built with **Nest.js**, **Prisma**, **PostgreS
 
 ## Architecture Overview
 
+```text
 project-root/
 ├── blog-api/ # Backend (Nest.js + Prisma)
 │ ├── src/
@@ -41,6 +42,7 @@ project-root/
 │ │ ├── components/
 │ │ └── lib/api.ts
 └── tests/ # Playwright E2E tests
+```
 
 ---
 
