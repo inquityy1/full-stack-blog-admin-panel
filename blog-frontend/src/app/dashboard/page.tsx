@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import API from '@/lib/api';
 import PostForm from '@/components/PostForm';
 import PostList from '@/components/PostList';
+import { useRouter } from 'next/navigation';
 
 interface Post {
   id: number;
@@ -24,6 +25,8 @@ const Title = styled.h1`
 `;
 
 export default function Dashboard() {
+  const router = useRouter();
+
   const [posts, setPosts] = useState<Post[]>([]);
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
@@ -33,6 +36,13 @@ export default function Dashboard() {
     const res = await API.get<Post[]>('/posts');
     setPosts(res.data);
   };
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (!token) {
+      router.push('/login');
+    }
+  }, []);
 
   useEffect(() => {
     fetchPosts();
