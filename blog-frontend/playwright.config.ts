@@ -12,7 +12,7 @@ export default defineConfig({
       use: {
         browserName: 'chromium',
         launchOptions: {
-          slowMo: 1000,
+          slowMo: 500,
         },
       },
     },
