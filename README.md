@@ -51,8 +51,7 @@ project-root/
 ### 1. Clone Repo
 
 ```bash
-git clone https://github.com/your-username/blog-admin-panel.git
-cd blog-admin-panel
+git clone https://github.com/inquityy1/full-stack-blog-admin-panel.git
 ```
 
 ---
