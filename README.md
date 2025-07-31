@@ -6,13 +6,13 @@ A **full-stack blog admin panel** built with **Nest.js**, **Prisma**, **PostgreS
 
 ## Features
 
-- ✅ **Secure Login** with JWT authentication
-- ✅ **Admin Dashboard** with full **CRUD** for blog posts
-- ✅ **Responsive UI** styled with `styled-components`
-- ✅ **Protected Routes** for authorized users
-- ✅ **Automated Testing**
-  - **Unit tests** (Jest) for backend
-  - **E2E tests** (Playwright) for full user flow
+- **Secure Login** with JWT authentication
+- **Admin Dashboard** with full **CRUD** for blog posts
+- **Responsive UI** styled with `styled-components`
+- **Protected Routes** for authorized users
+- **Automated Testing**
+- **Unit tests** (Jest) for backend
+- **E2E tests** (Playwright) for full user flow
 
 ---
 
@@ -50,7 +50,7 @@ project-root/
 
 ### 1. Clone Repo
 
-```bash
+```
 git clone https://github.com/inquityy1/full-stack-blog-admin-panel.git
 ```
 
@@ -58,7 +58,7 @@ git clone https://github.com/inquityy1/full-stack-blog-admin-panel.git
 
 ### 2. Backend Setup
 
-```bash
+```
 cd blog-api
 npm install
 ```
@@ -72,13 +72,13 @@ JWT_SECRET="your-secret-key"
 
 Run Prisma migrations:
 
-```bash
+```
 npx prisma migrate dev --name init
 ```
 
 Start backend:
 
-```bash
+```
 npm run start:dev
 ```
 
@@ -86,14 +86,14 @@ npm run start:dev
 
 ### 3. Frontend Setup
 
-```bash
+```
 cd ../blog-frontend
 npm install
 ```
 
 Start Frontend
 
-```bash
+```
 npm run dev
 ```
 
@@ -130,7 +130,7 @@ Response:
 
 Run unit tests:
 
-```bash
+```
 cd blog-api
 npm run test
 ```
@@ -139,7 +139,7 @@ npm run test
 
 Run E2E test for Login + Dashboard CRUD:
 
-```bash
+```
 cd blog-frontend
 npx playwright test
 ```
